@@ -7,12 +7,16 @@
 //
 
 #import "XZZAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation XZZAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [Parse setApplicationId:@"T5qxPzuVlr2uWEbP8ZD9JixrPNRMoAoa3RML3ehE"
+                  clientKey:@"b9Dd0vOmpREYffAOMOvquU3k7SIBRsDYZqrPq13C"];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     return YES;
 }
 							

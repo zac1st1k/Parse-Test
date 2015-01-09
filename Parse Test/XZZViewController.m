@@ -7,6 +7,7 @@
 //
 
 #import "XZZViewController.h"
+#import <parse/Parse.h>
 
 @interface XZZViewController ()
 
@@ -18,6 +19,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    PFObject *testObeject = [PFObject objectWithClassName:@"TestObject"];
+    [testObeject setObject:@"bar" forKey:@"foo"];
+    [testObeject save];
 }
 
 - (void)didReceiveMemoryWarning
