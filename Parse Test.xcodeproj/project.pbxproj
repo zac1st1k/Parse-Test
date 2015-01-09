@@ -34,6 +34,7 @@
 		118303C21A6004D6006E4C05 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118303C11A6004D6006E4C05 /* SystemConfiguration.framework */; };
 		118303C41A6004DE006E4C05 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 118303C31A6004DE006E4C05 /* libz.dylib */; };
 		118303C61A6004E5006E4C05 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 118303C51A6004E5006E4C05 /* libsqlite3.dylib */; };
+		118303C91A60239C006E4C05 /* XZZTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 118303C81A60239C006E4C05 /* XZZTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,8 @@
 		118303C11A6004D6006E4C05 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		118303C31A6004DE006E4C05 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		118303C51A6004E5006E4C05 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		118303C71A60239C006E4C05 /* XZZTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZZTableViewController.h; sourceTree = "<group>"; };
+		118303C81A60239C006E4C05 /* XZZTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZZTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,8 @@
 				118303861A5FF639006E4C05 /* XZZAppDelegate.h */,
 				118303871A5FF639006E4C05 /* XZZAppDelegate.m */,
 				118303891A5FF639006E4C05 /* Main_iPhone.storyboard */,
+				118303C71A60239C006E4C05 /* XZZTableViewController.h */,
+				118303C81A60239C006E4C05 /* XZZTableViewController.m */,
 				1183038C1A5FF639006E4C05 /* Main_iPad.storyboard */,
 				1183038F1A5FF639006E4C05 /* XZZViewController.h */,
 				118303901A5FF639006E4C05 /* XZZViewController.m */,
@@ -304,6 +309,7 @@
 			files = (
 				118303841A5FF639006E4C05 /* main.m in Sources */,
 				118303881A5FF639006E4C05 /* XZZAppDelegate.m in Sources */,
+				118303C91A60239C006E4C05 /* XZZTableViewController.m in Sources */,
 				118303911A5FF639006E4C05 /* XZZViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
