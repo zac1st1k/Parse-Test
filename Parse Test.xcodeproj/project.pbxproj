@@ -168,9 +168,9 @@
 				118303861A5FF639006E4C05 /* XZZAppDelegate.h */,
 				118303871A5FF639006E4C05 /* XZZAppDelegate.m */,
 				118303891A5FF639006E4C05 /* Main_iPhone.storyboard */,
+				1183038C1A5FF639006E4C05 /* Main_iPad.storyboard */,
 				118303C71A60239C006E4C05 /* XZZTableViewController.h */,
 				118303C81A60239C006E4C05 /* XZZTableViewController.m */,
-				1183038C1A5FF639006E4C05 /* Main_iPad.storyboard */,
 				1183038F1A5FF639006E4C05 /* XZZViewController.h */,
 				118303901A5FF639006E4C05 /* XZZViewController.m */,
 				118303921A5FF639006E4C05 /* Images.xcassets */,
@@ -533,6 +533,7 @@
 				118303AB1A5FF639006E4C05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		118303AC1A5FF639006E4C05 /* Build configuration list for PBXNativeTarget "Parse TestTests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +542,7 @@
 				118303AE1A5FF639006E4C05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -19,9 +19,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    PFObject *testObeject = [PFObject objectWithClassName:@"TestObject"];
-    [testObeject setObject:@"bar" forKey:@"foo"];
-    [testObeject save];
+//    PFObject *testObeject = [PFObject objectWithClassName:@"TestObject"];
+//    [testObeject setObject:@"bar" forKey:@"foo"];
+//    [testObeject save];
 }
 
 - (void)didReceiveMemoryWarning
@@ -31,6 +31,19 @@
 }
 
 - (IBAction)saveUserButtonPressed:(UIButton *)sender {
+    PFObject *loginCredentials = [PFObject objectWithClassName:@"LoginCredentials"];
+    loginCredentials[@"name"]  = self.usernameTextField.text;
+    loginCredentials[@"password"] = self.passwordTextField.text;
+    [loginCredentials saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (succeeded) {
+            UIAlertView *alerView = [[UIAlertView alloc] initWithTitle:@"Save" message:@"Your object saved" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [alerView show];
+            NSLog(@"save succeeded");            
+        }
+        else if (error){
+            NSLog(@"%@", error);
+        }
+    }];
 }
 
 - (IBAction)viewUserBarButtonPressed:(UIBarButtonItem *)sender {
